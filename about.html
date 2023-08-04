@@ -1,0 +1,83 @@
+<?php
+header('Cache-Control: no-cache, no-store, must-revalidate');
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="sojiJr, sojijr, PHP, developer, Soji-Oderinde, Damilola, web, tech">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>Damilola | Soji Jr | PHP Developer | Kotlin</title>
+  <link rel="icon" href="public/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="public/css/styles.css">
+
+<style>
+h5 a{
+  font-size: 15px;
+  color: #fff;
+}
+
+.book-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .book-content {
+  flex-direction: column;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+  <div class="book-container">
+    <nav>
+      <div class="cup-bar">
+        <a href="./home.html" class="cup">Home</a>
+        <a href="./about.html" class="cup active">About</a>
+        <a href="./project.html" class="cup">Projects</a>
+      </div>
+    </nav>
+
+    <a class="arrow left-arrow"><i class="fas fa-chevron-left"></i></a>
+    <a class="arrow right-arrow"><i class="fas fa-chevron-right"></i></a>
+
+    <button class="mode-toggle-button" onclick="toggleMode()">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <div class="book-content">
+        <div class="left-frame">
+          <img src="public/images/me.jpg" alt="Me">
+        </div>
+        <div class="right-box">
+          <h2 align="center">ABOUT</h2>
+          <h5>Hello, I'm Damilola Soji-Oderinde, a tech enthusiast, PHP developer, and occasional content creator.</h5> 
+          <h5>I am a Software engineering student at Babcock University, currently exploring Android mobile development with Kotlin.</h5>
+          <h5>I have a knack for writing and you can check out some of my works <a href="https://medium.com/@sojijr">here</a>.</h5>
+          <h5>Technologies I currently work with: <i>HTML, CSS, Bootstrap, PHP, MySQL, Kotlin, Git, GitHub</i></h5>
+        </div>
+
+        <div class="foot-note">
+          <p>by Damilola Soji-Oderinde (<a href="https://twitter.com/sojiJr">@sojijr</a>)</p>
+         </div>
+
+      </div>
+      
+      </div>
+  </div>
+  <script src="public/js/script.js"></script>
+</body>
+</html>
