@@ -374,20 +374,21 @@ nav a.active{
   @media screen and (max-width: 768px) {
     .book-container {
       width: 100%;
-      height: 90vh;
+      height: 88vh;
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       margin: 10px;
+      margin-top: -30px;
     }
 
     .rectangle-box {
       width: 90%;
-      height: 180px;
+      height: 170px;
     }
 
     .social-icons {
         position: absolute;
-        bottom: 10px;
+        bottom: 40px;
     }
     
     .social-icon {
@@ -398,7 +399,7 @@ nav a.active{
 
     .social-paragraph{
       position: absolute;
-      bottom: 65px;
+      bottom: 80px;
     }
 
     .social-icon img {
@@ -417,8 +418,8 @@ nav a.active{
     }
 
     .left-frame {
-      width: 280px;
-      height: 280px;
+      width: 250px;
+      height: 250px;
       top: 180px;
       left: inherit;
     }
@@ -427,14 +428,16 @@ nav a.active{
       width: 90%;
       height: 270px;
       padding: 10px;
-      top: 110px;
+      top: 90px;
      right: inherit;
     }
 
     .left-frame img {
       position: relative;
       bottom: 20px;
-      right: 18px;
+      right: 4px;
+      width: auto;
+      height: 330px;
     }
     
 
