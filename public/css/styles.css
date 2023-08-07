@@ -439,6 +439,10 @@ nav a.active{
      right: inherit;
     }
 
+    .right-box h5{
+      margin-bottom: -5px;
+    }
+
     .foot-note {
       left: 15px;
     }
@@ -502,6 +506,24 @@ nav a.active{
     .right-box {
       top: 130px;
       font-size: 13px;
+    }
+
+    .rectangle-box {
+      height: 150px;
+    }
+    
+    .box-title {
+      font-size: 16px;
+    }
+    
+    .box-subtitle,
+    .box-body {
+      font-size: 12px;
+    }
+    
+    .box-footer {
+      bottom: -25px;
+      font-size: 12px;
     }
   }
 
