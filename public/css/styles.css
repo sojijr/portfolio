@@ -165,7 +165,7 @@ nav a.active{
   font-family: 'Poppins', sans-serif;
 }
 
-.rectangle-box {
+.rectangle-box, .rectangle-box-inactive {
   width: 700px;
   height: 150px;
   background-color: #333;
@@ -175,6 +175,10 @@ nav a.active{
   transition: transform 0.3s ease;
   top: 150px;
   cursor: pointer;
+}
+
+.rectangle-box-inactive{
+  cursor: context-menu;
 }
 
 .rectangle-box:hover {
@@ -200,13 +204,18 @@ nav a.active{
   font-family: 'Poppins', sans-serif;
 }
 
-.box-footer {
+.box-footer, .box-footer-inactive {
   position: absolute;
   bottom: -35px;
   font-size: 14px;
 }
 
-.view-icon{
+.box-footer-inactive {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.view-icon, .view-icon-inactive{
   text-decoration: none;
   color: #fff;
 }
