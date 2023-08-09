@@ -56,27 +56,22 @@ function navigateToPage(direction) {
   let destinationURL;
 
   if (direction === 'previous') {
-    if (window.location.pathname.includes('home.html')) {
-      destinationURL = 'project.html';
-    }
-    else if (window.location.pathname.includes('about.html')) {
-      destinationURL = 'home.html';
-    }
-    else if (window.location.pathname.includes('project.html')) {
+    if (window.location.pathname.includes('about.html')) {
+      destinationURL = 'index.html';
+    } else if (window.location.pathname.includes('project.html')) {
       destinationURL = 'about.html';
+    } else {
+      destinationURL = 'project.html';
     }
 
   } else if (direction === 'next') {
-    if (window.location.pathname.includes('home.html')) {
+    if (window.location.pathname.includes('about.html')) {
+      destinationURL = 'project.html';
+    } else if (window.location.pathname.includes('project.html')) {
+      destinationURL = 'index.html';
+    } else {
       destinationURL = 'about.html';
     }
-    else if (window.location.pathname.includes('about.html')) {
-      destinationURL = 'project.html';
-    }
-    else if (window.location.pathname.includes('project.html')) {
-      destinationURL = 'home.html';
-    }
-
   }
 
   // Add the slide animation class to the .book-content

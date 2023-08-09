@@ -212,7 +212,7 @@ nav a.active{
 
 .box-footer-inactive {
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .view-icon, .view-icon-inactive{
@@ -353,12 +353,14 @@ nav a.active{
   filter: invert(100%);
 }
 
-.dark-mode .rectangle-box {
+.dark-mode .rectangle-box,
+.dark-mode .rectangle-box-inactive {
   background-color: #fff;
 }
 
 .dark-mode .box-content,
-.dark-mode .view-icon {
+.dark-mode .view-icon,
+.dark-mode .view-icon-inactive {
   color: #000;
 }
 
@@ -389,7 +391,7 @@ nav a.active{
       margin-top: -30px;
     }
 
-    .rectangle-box {
+    .rectangle-box, .rectangle-box-inactive {
       width: 90%;
       height: 170px;
     }
@@ -517,7 +519,7 @@ nav a.active{
       font-size: 13px;
     }
 
-    .rectangle-box {
+    .rectangle-box, .rectangle-box-inactive {
       height: 150px;
     }
     
@@ -580,7 +582,7 @@ nav a.active{
       margin-bottom: -4px;
     }
 
-    .rectangle-box {
+    .rectangle-box, .rectangle-box-inactive {
       height: 140px;
     }
     
