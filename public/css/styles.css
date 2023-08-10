@@ -181,7 +181,7 @@ nav a.active{
   cursor: context-menu;
 }
 
-.rectangle-box:hover {
+.rectangle-box:hover, .rectangle-box-inactive:hover {
   transform: scale(1.03);
 }
 
