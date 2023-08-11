@@ -56,21 +56,21 @@ function navigateToPage(direction) {
   let destinationURL;
 
   if (direction === 'previous') {
-    if (window.location.pathname.includes('about.html')) {
-      destinationURL = 'index.html';
-    } else if (window.location.pathname.includes('project.html')) {
-      destinationURL = 'about.html';
+    if (window.location.pathname.includes('about')) {
+      destinationURL = './';
+    } else if (window.location.pathname.includes('project')) {
+      destinationURL = 'about';
     } else {
-      destinationURL = 'project.html';
+      destinationURL = 'project';
     }
 
   } else if (direction === 'next') {
-    if (window.location.pathname.includes('about.html')) {
-      destinationURL = 'project.html';
-    } else if (window.location.pathname.includes('project.html')) {
-      destinationURL = 'index.html';
+    if (window.location.pathname.includes('about')) {
+      destinationURL = 'project';
+    } else if (window.location.pathname.includes('project')) {
+      destinationURL = './';
     } else {
-      destinationURL = 'about.html';
+      destinationURL = 'about';
     }
   }
 
