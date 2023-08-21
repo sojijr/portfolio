@@ -483,8 +483,13 @@ nav a.active{
     .box-body {
       font-size: 13px;
     }
+
     .des-code{
       bottom: 27px;
+    }
+
+    .small-des-code{
+      bottom: 20px;
     }
 
     .foot-note {
@@ -494,7 +499,6 @@ nav a.active{
     .foot-note-project{
       left: -20%;
     }
-
   }
   
   @media only screen and (min-height: 892px) and (max-height: 915px){
@@ -509,6 +513,10 @@ nav a.active{
 
     .des-code{
       bottom: 20px;
+    }
+
+    .small-des-code{
+      bottom: 6px;
     }
   }
   
@@ -585,23 +593,13 @@ nav a.active{
     .des-code{
       bottom: 10px;
     }
-  }
 
-  @media only screen and (min-width: 540px) and (max-width: 540px)  and (min-height: 720px) and (max-height: 720px){
-    .right-box {
-      top: 105px;
-    }
-
-    .portfolio-code{
-      top: 10px;
-    }
-
-    .des-code{
-      bottom: -20px;
+    .small-des-code{
+      bottom: 15px;
     }
   }
 
-  @media only screen and (min-height: 653px) and (max-width: 280px) {
+  @media only screen and (max-width: 280px) and (min-height: 653px)  {
     h1{
       position: relative;
       top: 15px;
@@ -661,6 +659,10 @@ nav a.active{
       bottom: 20px;
     }
 
+    .small-des-code{
+      bottom: 10px;
+    }
+
     .foot-note-project{
       left: -7%;
     }
@@ -710,6 +712,24 @@ nav a.active{
     .foot-note-project{
       left: -30%;
     }
+
+    .small-des-code{
+      bottom: 1px;
+    }
+  }
+
+  @media only screen and (min-width: 540px) and (max-width: 540px) and (min-height: 720px) and (max-height: 720px){
+    .right-box {
+      top: 105px;
+    }
+
+    .portfolio-code{
+      top: 10px;
+    }
+
+    .des-code{
+      bottom: -20px;
+    }
   }
 
   @media only screen and (min-width: 820px) and (max-width: 820px)  and (min-height: 1180px) and (max-height: 1180px){
@@ -739,5 +759,40 @@ nav a.active{
 
     .foot-note-project{
       left: -36%;
+    }
+  }
+
+  @media only screen and (min-width: 912px) and (max-width: 912px)  and (min-height: 1368px) and (max-height: 1368px){
+    code {
+      position: relative;
+      left: 15px;
+      font-size: 24px;
+    }
+
+    .box-container{
+      margin-bottom: -50px;
+    }
+
+    .rectangle-box, .rectangle-box-inactive {
+      height: 270px;
+    }
+    
+    .box-title {
+      font-size: 29px;
+    }
+    
+    .box-subtitle,
+    .box-body {
+      font-size: 23px;
+    }
+    
+    .box-footer {
+      bottom: -70px;
+      font-size: 25px;
+    }
+
+    .foot-note-project{
+      left: -36%;
+      top: 180px;
     }
   }
