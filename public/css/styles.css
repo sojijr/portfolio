@@ -13,7 +13,7 @@ body {
     position: relative;
     left: 10px;
     font-size: 15px;
-    transition: transform 0.2s ease;
+    transition: font-size 0.3s ease;
   }
 
   .portfolio-code{
@@ -26,6 +26,7 @@ body {
 
   code:hover {
     font-weight: bold;
+    font-size: 17px;
   }
 
   .book-container {
