@@ -462,10 +462,11 @@ nav a.active{
 
     .left-frame img {
       position: relative;
-      bottom: 20px;
+      bottom: 13px;
       right: 4px;
       width: auto;
-      height: 330px;
+      height: 370px;
+      transform: scale(1.1);
     }
     
     .right-box {
@@ -509,7 +510,7 @@ nav a.active{
 
     .right-box {
       font-size: 18px;
-      top: 20px;
+      top: 15px;
     }
 
     .des-code{
@@ -539,10 +540,10 @@ nav a.active{
     }
 
     .left-frame img {
-      bottom: 20px;
-      right: 4px;
+      bottom: 12px;
+      right: 0px;
       width: auto;
-      height: 270px;
+      height: 300px;
     }
 
     .right-box {
@@ -562,10 +563,10 @@ nav a.active{
     }
 
     .left-frame img {
-      bottom: 20px;
+      bottom: 12px;
       right: 4px;
       width: auto;
-      height: 270px;
+      height: 300px;
     }
 
     .right-box {
@@ -623,10 +624,10 @@ nav a.active{
     }
 
     .left-frame img {
-      bottom: 15px;
-      right: 6px;
+      bottom: 12px;
+      right: 0px;
       width: auto;
-      height: 240px;
+      height: 270px;
     }
 
     .right-box {
@@ -635,7 +636,7 @@ nav a.active{
     }
 
     .right-box h5{
-      margin-bottom: -4px;
+      margin-bottom: -6px;
     }
 
     .rectangle-box, .rectangle-box-inactive {
@@ -680,7 +681,7 @@ nav a.active{
       bottom: 15px;
       right: 0px;
       width: auto;
-      height: 450px;
+      height: 480px;
     }
 
     .right-box {
