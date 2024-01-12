@@ -499,7 +499,7 @@ nav a.active{
     }
 
     .foot-note-project{
-      left: -20%;
+      left: -10%;
     }
   }
   
@@ -742,6 +742,10 @@ nav a.active{
 
     .des-code{
       bottom: -20px;
+    }
+
+    .foot-note-project{
+      left: -20%;
     }
   }
 
