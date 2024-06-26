@@ -422,6 +422,10 @@ nav a.active{
       height: 170px;
     }
 
+    .rectangle-box:hover, .rectangle-box-inactive:hover {
+      transform: none;
+    }
+
     .social-icons {
         position: absolute;
         bottom: 40px;
