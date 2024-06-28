@@ -184,7 +184,7 @@ nav a.active{
   font-family: 'Poppins', sans-serif;
 }
 
-.rectangle-box, .rectangle-box-inactive {
+.rectangle-box {
   width: 690px;
   height: 150px;
   background-color: #333;
@@ -196,11 +196,7 @@ nav a.active{
   cursor: pointer;
 }
 
-.rectangle-box-inactive{
-  cursor: context-menu;
-}
-
-.rectangle-box:hover, .rectangle-box-inactive:hover {
+.rectangle-box:hover {
   transform: scale(1.03);
 }
 
@@ -223,18 +219,13 @@ nav a.active{
   font-family: 'Poppins', sans-serif;
 }
 
-.box-footer, .box-footer-inactive {
+.box-footer {
   position: absolute;
   bottom: -35px;
   font-size: 14px;
 }
 
-.box-footer-inactive {
-  pointer-events: none;
-  opacity: 0.6;
-}
-
-.view-icon, .view-icon-inactive{
+.view-icon {
   text-decoration: none;
   color: #fff;
 }
@@ -379,14 +370,12 @@ nav a.active{
   filter: invert(100%);
 }
 
-.dark-mode .rectangle-box,
-.dark-mode .rectangle-box-inactive {
+.dark-mode .rectangle-box {
   background-color: #fff;
 }
 
 .dark-mode .box-content,
-.dark-mode .view-icon,
-.dark-mode .view-icon-inactive {
+.dark-mode .view-icon {
   color: #000;
 }
 
@@ -417,12 +406,12 @@ nav a.active{
       margin-top: -30px;
     }
 
-    .rectangle-box, .rectangle-box-inactive {
+    .rectangle-box {
       width: 90%;
       height: 170px;
     }
 
-    .rectangle-box:hover, .rectangle-box-inactive:hover {
+    .rectangle-box:hover {
       transform: none;
     }
 
@@ -568,7 +557,7 @@ nav a.active{
       font-size: 13px;
     }
 
-    .rectangle-box, .rectangle-box-inactive {
+    .rectangle-box {
       height: 150px;
     }
     
@@ -633,7 +622,7 @@ nav a.active{
       margin-bottom: -6px;
     }
 
-    .rectangle-box, .rectangle-box-inactive {
+    .rectangle-box {
       height: 140px;
     }
     
@@ -698,7 +687,7 @@ nav a.active{
       margin-bottom: 0px;
     }
 
-    .rectangle-box, .rectangle-box-inactive {
+    .rectangle-box {
       height: 195px;
     }
     
@@ -741,70 +730,5 @@ nav a.active{
 
     .foot-note-project{
       left: -20%;
-    }
-  }
-
-  @media only screen and (min-width: 820px) and (max-width: 820px)  and (min-height: 1180px) and (max-height: 1180px){
-    code {
-      position: relative;
-      left: 15px;
-      font-size: 24px;
-    }
-    
-    .rectangle-box, .rectangle-box-inactive {
-      height: 230px;
-    }
-    
-    .box-title {
-      font-size: 27px;
-    }
-    
-    .box-subtitle,
-    .box-body {
-      font-size: 20px;
-    }
-    
-    .box-footer {
-      bottom: -70px;
-      font-size: 24px;
-    }
-
-    .foot-note-project{
-      left: -36%;
-    }
-  }
-
-  @media only screen and (min-width: 912px) and (max-width: 912px)  and (min-height: 1368px) and (max-height: 1368px){
-    code {
-      position: relative;
-      left: 15px;
-      font-size: 24px;
-    }
-
-    .box-container{
-      margin-bottom: -50px;
-    }
-
-    .rectangle-box, .rectangle-box-inactive {
-      height: 270px;
-    }
-    
-    .box-title {
-      font-size: 29px;
-    }
-    
-    .box-subtitle,
-    .box-body {
-      font-size: 23px;
-    }
-    
-    .box-footer {
-      bottom: -70px;
-      font-size: 25px;
-    }
-
-    .foot-note-project{
-      left: -36%;
-      top: 180px;
     }
   }
