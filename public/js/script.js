@@ -1,10 +1,10 @@
-//darkmode
+const bookContainer = document.querySelector('.book-container');
 const modeToggleButton = document.querySelector('.mode-toggle-button');
+
 let darkMode;
 
 function toggleMode() {
   darkMode = !darkMode;
-  const bookContainer = document.querySelector('.book-container');
 
   if (darkMode) {
     bookContainer.classList.add('dark-mode');
@@ -14,12 +14,10 @@ function toggleMode() {
     modeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
   }
 
-  // Save the dark mode preference to localStorage
   localStorage.setItem('darkMode', darkMode);
 }
 
 function setInitialMode() {
-  // Retrieve the dark mode preference from localStorage
   const storedDarkMode = localStorage.getItem('darkMode');
 
   if (storedDarkMode !== null) {
@@ -42,8 +40,6 @@ function setInitialMode() {
 }
 
 setInitialMode();
-
-
 
 // Navigation with flip animation
 const leftArrow = document.querySelector('.left-arrow');
@@ -78,9 +74,7 @@ function navigateToPage(direction) {
   const bookContent = document.querySelector('.book-content');
   bookContent.classList.add(direction === 'previous' ? 'slide-right' : 'slide-left');
 
-  // After a short delay, navigate to the destination page
   setTimeout(() => {
     window.location.href = destinationURL;
-  }, 180); // Adjust the duration as needed (here, it's set to 300ms)
+  }, 180);
 }
-
