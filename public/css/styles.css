@@ -539,16 +539,32 @@ nav a.active{
   }
 }
 
-@media screen and (min-width: 390px) and (max-width: 390px) {
+@media screen and (max-width: 390px) {
   .left-frame {
     width: 50vw;
     height: 50vw;
   }
+
+  .right-box {
+    font-size: 1.02rem;
+    margin-bottom: -20px;
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 320px) {
+@media screen and (max-width: 360px) {
+  .left-frame {
+    width: 57vw;
+    height: 57vw;
+  }
+
+  .right-box {
+    font-size: 1.07rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .book-content {
-    margin-bottom: -90px;
+    margin-bottom: 0px;
   }
 
   .left-frame {
@@ -563,6 +579,6 @@ nav a.active{
 
   .right-box {
     font-size: 0.75rem;
-    margin-bottom: -70px;
+    margin-bottom: -50px;
   }
 }
