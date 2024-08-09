@@ -582,3 +582,22 @@ nav a.active{
     margin-bottom: -50px;
   }
 }
+
+/* Landscape orientation for mobile devices */
+@media screen and (max-width: 920px) and (orientation: landscape) {
+  .book-container{
+    overflow-y: scroll;
+  }
+  
+  .book-content-mobile-landscape { 
+      margin-bottom: -150px;
+  }
+
+  .social-icons {
+    bottom: -15%;
+  }
+
+  .social-paragraph {
+    bottom: -3%;
+  }
+}
