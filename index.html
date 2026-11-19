@@ -4,16 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oluwadamilola Soji-Oderinde (Soji) — Software Engineer &amp; Developer Relations Engineer</title>
+    <title>Oluwadamilola Soji-Oderinde (Soji Jr) — Software Engineer &amp; Developer Relations Engineer</title>
     <meta name="description"
-        content="Oluwadamilola Soji-Oderinde, also known as Soji. Software Engineer and Developer Relations Engineer writing, speaking, and building community for developers.">
+        content="Oluwadamilola Soji-Oderinde, also known as Soji Jr. Software Engineer and Developer Relations Engineer writing, speaking, and building community for developers.">
     <meta name="keywords"
         content="Oluwadamilola Soji-Oderinde, Soji, sojijr, sojijr.com, Software Engineer, Developer Relations, Developer Relations Engineer, Developer Advocate, Backend Engineer, PHP, Laravel, Go">
     <meta name="author" content="Oluwadamilola Soji-Oderinde">
     <link rel="canonical" href="https://sojijr.com/">
     <meta name="theme-color" content="#f1ece1">
+        <script>
+            // Resolve the theme before first paint so the page never flashes light.
+            (function () {
+                var theme;
+                try { theme = localStorage.getItem('soji-theme'); } catch (e) { }
+                if (theme !== 'dark' && theme !== 'light') {
+                    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                }
+                document.documentElement.classList.add(theme + '-mode');
+                document.documentElement.style.colorScheme = theme;
+                document.querySelector('meta[name="theme-color"]').content =
+                    theme === 'dark' ? '#1a1b19' : '#f1ece1';
+            })();
+        </script>
     <meta property="og:title"
-        content="Oluwadamilola Soji-Oderinde (Soji) — Software Engineer &amp; Developer Relations Engineer">
+        content="Oluwadamilola Soji-Oderinde (Soji Jr) — Software Engineer &amp; Developer Relations Engineer">
     <meta property="og:description"
         content="Software Engineer and Developer Relations Engineer. I write, speak and build community for developers.">
     <meta property="og:image" content="https://res.cloudinary.com/de5oxvuqe/image/upload/v1766255326/favicon_khusax.png">
@@ -22,7 +36,7 @@
     <meta property="og:site_name" content="Soji">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title"
-        content="Oluwadamilola Soji-Oderinde (Soji) — Software Engineer &amp; Developer Relations Engineer">
+        content="Oluwadamilola Soji-Oderinde (Soji Jr) — Software Engineer &amp; Developer Relations Engineer">
     <meta name="twitter:description"
         content="Software Engineer and Developer Relations Engineer. I write, speak and build community for developers.">
     <meta name="twitter:image"
@@ -454,8 +468,6 @@
 
             <!-- ABOUT -->
             <aside class="about" aria-labelledby="about-head">
-                <img class="portrait" src="assets/soji.jpg" alt="Portrait of Oluwadamilola Soji-Oderinde" width="640"
-                    height="800">
                 <h2 class="about-head" id="about-head">About</h2>
                 <p class="about-text">I'm Soji, a Software Engineer and Developer Relations Engineer (Developer
                     Advocate). I focus on backend engineering with PHP/Laravel and Go, and spend the rest of my time in

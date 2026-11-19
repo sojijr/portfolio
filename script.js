@@ -1,12 +1,23 @@
 const themeButton = document.getElementById('themeButton');
 const body = document.body;
+const root = document.documentElement;
 
 const THEME_KEY = 'soji-theme';
+const THEME_COLORS = { light: '#f1ece1', dark: '#1a1b19' };
 
 function applyTheme(theme) {
+    const isDark = theme === 'dark';
     body.classList.remove('light-mode', 'dark-mode');
-    body.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
-    document.documentElement.style.colorScheme = theme === 'dark' ? 'dark' : 'light';
+    body.classList.add(isDark ? 'dark-mode' : 'light-mode');
+    root.classList.remove('light-mode', 'dark-mode');
+    root.classList.add(isDark ? 'dark-mode' : 'light-mode');
+    root.style.colorScheme = isDark ? 'dark' : 'light';
+
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+        meta.content = isDark ? THEME_COLORS.dark : THEME_COLORS.light;
+    }
+
     try {
         localStorage.setItem(THEME_KEY, theme);
     } catch (error) {
